@@ -15,8 +15,10 @@ public class HeaderComponent extends BasePage {
     public WebElement searchButton;
     @FindBy(xpath = "//a[@class='favorite']")
     public WebElement wishList;
-    @FindBy(xpath = "")
+    @FindBy(xpath = "(//a[@class='ng-star-inserted'])[1]")
     public WebElement homePage;
+    @FindBy(xpath = "(//a[contains(@href, '/en/deals/kiev/eda_i_restorany')])[1]")
+    public WebElement filter;
 
     public HeaderComponent(WebDriver webDriver) {
         super(webDriver);
