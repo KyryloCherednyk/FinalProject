@@ -14,8 +14,6 @@ public class SearchAdd extends BasePage{
         header.searchField.sendKeys("Sushi");
         return this;
     }
-    @FindBy(xpath = "(//p[@class='title'])[1]")
-    public WebElement searchResult;
 
     public SearchAdd(WebDriver driver, HeaderComponent header) {
         super(driver);

@@ -21,8 +21,7 @@ public class LogIn extends BasePage {
         return this;
     }
 
-    public LogIn fillPassword()
-    {
+    public LogIn fillPassword() {
         passwordField.click();
         passwordField.clear();
         passwordField.sendKeys("16047906");

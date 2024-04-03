@@ -13,7 +13,10 @@ public class HeaderComponent extends BasePage {
 
     @FindBy(xpath = "//button[@class='p-element search-button p-button p-component p-button-icon-only']")
     public WebElement searchButton;
-
+    @FindBy(xpath = "//a[@class='favorite']")
+    public WebElement wishList;
+    @FindBy(xpath = "")
+    public WebElement homePage;
 
     public HeaderComponent(WebDriver webDriver) {
         super(webDriver);
