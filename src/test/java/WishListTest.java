@@ -31,7 +31,5 @@ public class WishListTest extends BaseTest{
         header.wishList.click();
         var actualResult = wish.itemInWishList.getText();
         Assert.assertEquals(acceptingResult,actualResult,"Item didn't found");
-
-
     }
 }

@@ -3,7 +3,7 @@ package org.pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.pages.components.HeaderComponent;
+
 
 public class HomePage extends BasePage {
 
@@ -12,7 +12,11 @@ public class HomePage extends BasePage {
 
     @FindBy(xpath = "//div[@class='description-wrapper']")
     public WebElement couponDescription;
+    @FindBy(xpath = "//a[@href='/en/pg/contacts']")
+    public WebElement contactUsButton;
 
+    @FindBy(xpath = "//a[@href='/en/deals/kiev/new-offers']")
+    public WebElement newOffers;
 
     public HomePage(WebDriver driver) {
         super(driver);
