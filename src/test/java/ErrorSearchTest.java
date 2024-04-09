@@ -1,11 +1,10 @@
-import org.pages.BasePage;
 import org.pages.SearchAdd;
 import org.pages.components.HeaderComponent;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class ErorSearchTest extends BaseTest {
+public class ErrorSearchTest extends BaseTest {
     public HeaderComponent header;
     public SearchAdd search;
 

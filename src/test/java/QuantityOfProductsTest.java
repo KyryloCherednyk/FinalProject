@@ -5,7 +5,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class QuantityOfProductsTest extends BaseTest{
+public class QuantityOfProductsTest extends BaseTest {
     public CartPage cart;
     public HomePage home;
     public DiscountOffersPage discount;
@@ -18,15 +18,13 @@ public class QuantityOfProductsTest extends BaseTest{
     }
 
     @Test
-    public void QuantityOfProductsTest()
-    {
+    public void QuantityOfProductsTest() {
         driver.get("https://pokupon.ua/en");
-        home.newOffers.click();
-        discount.discountCoupon.click();
-        discount.chooseOne.click();
-        discount.discountOffer.click();
-        cart.countOfCoupons.click();
-        Assert.assertTrue(cart.totalPrice.isDisplayed(),"Total price is incorrect");
-
+        home.clickNewOffers();
+        discount.clickDiscountCoupon();
+        discount.clickChooseOne();
+        discount.clickDiscountOffer();
+        cart.clickCountOfCoupons();
+        Assert.assertTrue(cart.totalPrice.isDisplayed(), "Total price is incorrect");
     }
 }

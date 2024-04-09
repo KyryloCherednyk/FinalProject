@@ -10,7 +10,6 @@ public class HeaderComponent extends BasePage {
     public WebElement loginButton;
     @FindBy(xpath = "(//input[@role='searchbox'])[1]")
     public WebElement searchField;
-
     @FindBy(xpath = "//button[@class='p-element search-button p-button p-component p-button-icon-only']")
     public WebElement searchButton;
     @FindBy(xpath = "//a[@class='favorite']")
@@ -19,6 +18,10 @@ public class HeaderComponent extends BasePage {
     public WebElement homePage;
     @FindBy(xpath = "(//a[contains(@href, '/en/deals/kiev/eda_i_restorany')])[1]")
     public WebElement filter;
+    @FindBy(xpath = "//div[@class='current']")
+    public WebElement language;
+    @FindBy(xpath = "//a[@href='/uk']")
+    public WebElement changeLanguage;
 
     public HeaderComponent(WebDriver webDriver) {
         super(webDriver);
