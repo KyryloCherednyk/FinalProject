@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="All Tests">
+    <test name="All Tests">
+        <classes>
+            <class name="AddCommentTest"/>
+            <class name="AuthorizationTest"/>
+            <class name="BaseTest"/>
+            <class name="ContactUsTest"/>
+            <class name="CouponDescriptionTest"/>
+            <class name="DiscountTest"/>
+            <class name="ErrorSearchTest"/>
+            <class name="FilterTest"/>
+            <class name="LocalisationTest"/>
+            <class name="QuantityOfProductsTest"/>
+            <class name="SearchTest"/>
+            <class name="WishListTest"/>
+        </classes>
+    </test>
+</suite>

@@ -17,9 +17,12 @@ public class DiscountTest extends BaseTest {
     @Test
     public void DiscountOffersTest()
     {
+        String discountValue = "DISCOUNT";
         driver.get("https://pokupon.ua/en");
         home.newOffers.click();
         discount.discountCoupon.click();
-        Assert.assertTrue(discount.currentDiscount.isDisplayed(), "Discount dosn't apply");
+        var actualResult = discount.currentDiscount.getText();
+
+        Assert.assertEquals(actualResult, discountValue, "Discount dosn't apply");
     }
 }
