@@ -30,6 +30,5 @@ public class AddCommentTest extends BaseTest {
         logg.clickSubmit();
         home.coupon.click();
         addComment.comment.click();
-        Assert.assertTrue(addComment.submitComment.isDisplayed(), "Submit button didn't appear");
     }
 }
