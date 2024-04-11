@@ -40,4 +40,9 @@ public class DiscountOffersPage extends BasePage {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.elementToBeClickable(discountOffer)).click();
     }
+
+    public void clickCurrentDiscount() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOf(currentDiscount)).click();
+    }
 }

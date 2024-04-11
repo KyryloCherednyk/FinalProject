@@ -47,4 +47,9 @@ public class HeaderComponent extends BasePage {
     public HeaderComponent(WebDriver webDriver) {
             super(webDriver);
     }
+
+    public void clickFilter() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(filter)).click();
+    }
 }

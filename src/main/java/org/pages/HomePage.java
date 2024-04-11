@@ -37,4 +37,9 @@ public class HomePage extends BasePage {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.elementToBeClickable(newOffers)).click();
     }
+
+    public void clickCoupon() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(coupon)).click();
+    }
 }

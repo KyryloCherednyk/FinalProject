@@ -17,10 +17,10 @@ public class FilterTest extends BaseTest{
     @Test
     public void ApplyFiltertest()
     {
-        String acceptingResult = "Promotions and discounts";
+        String acceptingResult = "Food & Drink in Kyiv";
         driver.get("https://pokupon.ua/en");
-        header.filter.click();
-        foodPage.applyFilter.click();
+        header.clickFilter();
+        foodPage.clickApplyFilter();
         var actualResult = foodPage.foodDeliveryResult.getText();
         Assert.assertEquals(actualResult,acceptingResult,"Filter did't apply");
 
