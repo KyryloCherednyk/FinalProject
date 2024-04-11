@@ -10,6 +10,7 @@ public class ContactUsPage extends BasePage {
 
     @FindBy(id = "message")
     public WebElement problemDescription;
+
     @FindBy(xpath = "//button[@class='form-submit']")
     public WebElement submitButton;
 

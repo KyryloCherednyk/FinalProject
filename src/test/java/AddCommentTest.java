@@ -1,27 +1,26 @@
-import org.pages.AddToWishList;
-import org.pages.LogIn;
-import org.pages.SearchAdd;
+import org.pages.*;
 import org.pages.components.HeaderComponent;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class WishListTest extends BaseTest{
+public class AddCommentTest extends BaseTest {
+    public HomePage home;
+    public AddCommentPage addComment;
     public HeaderComponent header;
-    public AddToWishList wish;
     public LogIn logg;
 
     @BeforeMethod
     public void InitPage() {
+        addComment = new AddCommentPage(driver);
+        home = new HomePage(driver);
         header = new HeaderComponent(driver);
-        wish = new AddToWishList(driver, header);
         logg = new LogIn(driver);
     }
 
+
     @Test
-    private void AddTest()
-    {
-        String acceptingResult = "Up to 3 hours of play at the Sky Mall bowling club";
+    public void AddCommentTest() {
         driver.get("https://pokupon.ua/en");
         header.waitForHeader();
         header.clickLoginButton();
@@ -29,9 +28,8 @@ public class WishListTest extends BaseTest{
         logg.fillLogin();
         logg.fillPassword();
         logg.clickSubmit();
-        wish.addToWishList();
-        header.wishList.click();
-        var actualResult = wish.itemInWishList.getText();
-        Assert.assertEquals(acceptingResult,actualResult,"Item didn't found");
+        home.coupon.click();
+        addComment.comment.click();
+        Assert.assertFalse(addComment.submitComment.isDisplayed(), "Submit button didn't appear");
     }
 }

@@ -19,7 +19,7 @@ public class DiscountOffersPage extends BasePage {
     @FindBy(xpath = "//div[@class='enter-campaign-btn ng-star-inserted']")
     public WebElement chooseOne;
 
-    @FindBy(xpath = "//a[contains(@href,'/759010')]")
+    @FindBy(xpath = "//a[contains(@href,'/759249')]")
     public WebElement discountOffer;
 
     public DiscountOffersPage(WebDriver driver) {

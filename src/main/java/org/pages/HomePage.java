@@ -16,13 +16,18 @@ public class HomePage extends BasePage {
 
     @FindBy(xpath = "//div[@class='description-wrapper']")
     public WebElement couponDescription;
+
     @FindBy(xpath = "//a[@href='/en/pg/contacts']")
     public WebElement contactUsButton;
 
     @FindBy(xpath = "//a[@href='/en/deals/kiev/new-offers']")
     public WebElement newOffers;
+
     @FindBy(xpath = "//a[contains(@href,'/dostavka_edy')]")
     public WebElement foodDelivery;
+
+    @FindBy(xpath = "//div[@class='social youtube ng-star-inserted']")
+    public WebElement youTube;
 
     public HomePage(WebDriver driver) {
         super(driver);

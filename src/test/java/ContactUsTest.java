@@ -1,7 +1,5 @@
 import org.pages.ContactUsPage;
 import org.pages.HomePage;
-import org.pages.SearchAdd;
-import org.pages.components.HeaderComponent;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 

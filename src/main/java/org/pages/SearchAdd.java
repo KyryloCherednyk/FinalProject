@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.pages.components.HeaderComponent;
 
 public class SearchAdd extends BasePage {
+
     public HeaderComponent header;
 
     public SearchAdd fillSearch() {

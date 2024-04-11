@@ -7,8 +7,10 @@ import org.pages.components.HeaderComponent;
 
 public class AddToWishList extends BasePage {
     public HeaderComponent header;
+
     @FindBy(xpath = "(//button[contains(@class, 'favorite')])[1]")
     public WebElement elementForWishList;
+
     @FindBy(xpath = "//p[@class='title']")
     public WebElement itemInWishList;
 

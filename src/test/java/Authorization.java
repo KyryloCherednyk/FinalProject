@@ -8,6 +8,7 @@ import java.time.Duration;
 public class Authorization extends BaseTest{
     public LogIn logg;
     public HeaderComponent header;
+
     @BeforeMethod
     public void InitPage()
     {
@@ -19,11 +20,12 @@ public class Authorization extends BaseTest{
     public void AuthorizationTest()
     {
         driver.get("https://pokupon.ua/en");
-
-        header.loginButton.click();
+        header.waitForHeader();
+        header.clickLoginButton();
+        logg.waitForLoginPage();
         logg.fillLogin();
         logg.fillPassword();
-        logg.submitButton.click();
+        logg.clickSubmit();
 
     }
 }
