@@ -4,7 +4,6 @@
         <classes>
             <class name="AddCommentTest"/>
             <class name="AuthorizationTest"/>
-            <class name="BaseTest"/>
             <class name="ContactUsTest"/>
             <class name="CouponDescriptionTest"/>
             <class name="DiscountTest"/>
