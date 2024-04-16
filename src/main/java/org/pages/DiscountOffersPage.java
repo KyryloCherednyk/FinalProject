@@ -13,13 +13,13 @@ public class DiscountOffersPage extends BasePage {
     @FindBy(xpath = "(//div[@class='discount _blue ng-star-inserted'])[1]")
     public WebElement discountCoupon;
 
-    @FindBy(xpath = "(//span[@class='benefit-title'])[1]")
+    @FindBy(xpath = "(//span[@class='benefit-title'])[3]")
     public WebElement currentDiscount;
 
     @FindBy(xpath = "//div[@class='enter-campaign-btn ng-star-inserted']")
     public WebElement chooseOne;
 
-    @FindBy(xpath = "//a[contains(@href,'/759249')]")
+    @FindBy(xpath = "(//a[contains(@href,'/759502')])[2]")
     public WebElement discountOffer;
 
     public DiscountOffersPage(WebDriver driver) {

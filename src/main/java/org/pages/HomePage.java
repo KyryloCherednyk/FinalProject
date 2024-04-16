@@ -11,13 +11,13 @@ import java.time.Duration;
 
 public class HomePage extends BasePage {
 
-    @FindBy(xpath = "(//a[contains(@class, 'campaign-tile')])[1]")
+    @FindBy(xpath = "//a[contains(@href, '/en/deals/item/710371')]")
     public WebElement coupon;
 
     @FindBy(xpath = "//div[@class='description-wrapper']")
     public WebElement couponDescription;
 
-    @FindBy(xpath = "//a[@href='/en/pg/contacts']")
+    @FindBy(xpath = "(//a[@href='/en/pg/contacts'])[2]")
     public WebElement contactUsButton;
 
     @FindBy(xpath = "//a[@href='/en/deals/kiev/new-offers']")

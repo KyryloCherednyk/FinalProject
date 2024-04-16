@@ -26,7 +26,7 @@ public class HeaderComponent extends BasePage {
     @FindBy(xpath = "(//a[@class='ng-star-inserted'])[1]")
     public WebElement homePage;
 
-    @FindBy(xpath = "(//a[contains(@href, '/en/deals/kiev/eda_i_restorany')])[1]")
+    @FindBy(xpath = "(//a[contains(@href, '/en/deals/kiev/eda_i_restorany')])[2]")
     public WebElement filter;
 
     @FindBy(xpath = "//div[@class='current']")

@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class AddCommentPage extends BasePage{
 
-    @FindBy (xpath ="//form[@class='ng-untouched ng-pristine ng-valid ng-star-inserted']")
+    @FindBy (xpath ="//form[@class='ng-star-inserted']")
     public WebElement comment;
 
     @FindBy (xpath = "//div[@class='form-item question']")

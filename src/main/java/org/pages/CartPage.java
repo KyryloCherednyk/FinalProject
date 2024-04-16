@@ -10,7 +10,7 @@ import java.time.Duration;
 
 public class CartPage extends BasePage {
 
-    @FindBy(xpath = "//button[@class='inc quantity-btn']")
+    @FindBy(xpath = "(//button[@class='inc quantity-btn'])[2]")
     public WebElement countOfCoupons;
 
     @FindBy(xpath = "(//p[@class='payment-info-item-value'])[3]")

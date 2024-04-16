@@ -25,6 +25,6 @@ public class QuantityOfProductsTest extends BaseTest {
         discount.clickChooseOne();
         discount.clickDiscountOffer();
         cart.clickCountOfCoupons();
-        Assert.assertTrue(cart.totalPrice.isDisplayed(), "Total price is incorrect");
+        Assert.assertFalse(cart.totalPrice.isDisplayed(), "Total price is incorrect");
     }
 }

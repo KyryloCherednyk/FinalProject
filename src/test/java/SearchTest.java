@@ -1,5 +1,3 @@
-
-
 import org.pages.SearchAdd;
 import org.pages.components.HeaderComponent;
 import org.testng.annotations.BeforeMethod;
